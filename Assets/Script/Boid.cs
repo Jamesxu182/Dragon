@@ -24,14 +24,6 @@ public class Boid : MonoBehaviour {
         }
     }
 
-    public Vector3 SeekForce(Vector3 target)
-    {
-        Vector3 desired = target - transform.position;
-        desired.Normalize();
-        desired *= maxSpeed;
-        return desired - velocity;
-    }
-
     public Vector3 ArriveForce(Vector3 target, float slowingDistance)
     {
         Vector3 toTarget = target - transform.position;
@@ -59,16 +51,8 @@ public class Boid : MonoBehaviour {
             }
         }
 
-        /*
-        if (seekEnabled)
-        {
-            if (seekTarget != null)
-            {
-                seekTargetPos = seekTarget.transform.position;
-            }
-            force += Seek(seekTargetPos);
-        }
-        if (arriveEnabled)
+
+        /* if (arriveEnabled)
         {
             if (arriveTarget != null)
             {
