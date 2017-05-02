@@ -20,6 +20,9 @@ public class GodViewCameraController : MonoBehaviour {
 	void Update () {
         Cursor.visible = true;
 
+        //float cursor_v = Input.GetAxis("");
+        //float cursor_y = Input.GetAxis("");
+
         if (Input.GetButtonDown("Fire1"))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

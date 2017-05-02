@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Android Mobile Scene.unity
+- path: Assets/Scene/Android Scene.unity
   isLoaded: 1
   isActive: 1
