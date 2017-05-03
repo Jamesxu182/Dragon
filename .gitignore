@@ -1,3 +1,6 @@
+# Dependency Library
+Library/
+
 # Build executable file & Temp
 Build/
 Temp/
