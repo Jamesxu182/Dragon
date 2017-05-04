@@ -5,8 +5,6 @@ using UnityEngine;
 public class BalanceAnimator : MonoBehaviour {
     public float amplitude = 10;
 
-    private Vector3 target_vector;
-
     // Use this for initialization
     void Start () {
 		
@@ -39,7 +37,5 @@ public class BalanceAnimator : MonoBehaviour {
         {
             this.target_vector = Quaternion.AngleAxis(amplitude, Vector3.Cross(Vector3.up, transform.up)) * Vector3.up;
         }*/
-
-        this.target_vector = transform.up;
     }
 }

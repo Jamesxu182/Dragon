@@ -87,6 +87,14 @@ public class FPSController : MonoBehaviour {
         float mouse_h = Input.GetAxis("Mouse Horizontal");
         float mouse_v = Input.GetAxis("Mouse Vertical");
 
+		Debug.Log ("Mouse H: " + mouse_h);
+		Debug.Log ("Mouse V: " + mouse_v);
+
+		if (Mathf.Abs(mouse_h) > 5.0f || Mathf.Abs(mouse_v) > 20.0f) {
+			mouse_h = 0.0f;
+			mouse_v = 0.0f;
+		}
+
         view_h += Mathf.Abs(ps_view_h) > 0.05f ? ps_view_h : 0.0f;
         view_v += Mathf.Abs(ps_view_v) > 0.05f ? ps_view_v : 0.0f;
 
