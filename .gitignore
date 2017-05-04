@@ -1,6 +1,3 @@
-# Dependency Library
-Library/
-
 # Build executable file & Temp
 Build/
 Temp/
@@ -27,3 +24,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Mac File System
+.DS_Store
